@@ -1,0 +1,31 @@
+{
+  "name": "ubuntu-i386-kernel-base",
+  "architecture": "i386",
+  "releases": {
+    "resolute": {
+      "version": "26.04",
+      "lts": true,
+      "role": "stable",
+      "branch": "ubuntu/resolute",
+      "upstream": "https://kernel.ubuntu.com/git/ubuntu/ubuntu-resolute.git",
+      "upstream_branch": "master",
+      "fetch_depth": 1,
+      "kernel_version": "7.0.0-15-generic"
+    },
+    "stonking": {
+      "version": "26.10",
+      "role": "development",
+      "branch": "ubuntu/stonking",
+      "upstream": "https://kernel.ubuntu.com/git/ubuntu/ubuntu-stonking.git",
+      "upstream_branch": "master",
+      "status": "scaffold — upstream not yet seeded"
+    },
+    "devel": {
+      "role": "unstable",
+      "branch": "ubuntu/devel",
+      "upstream": "https://kernel.ubuntu.com/git/ubuntu/ubuntu-devel.git",
+      "upstream_branch": "master",
+      "status": "scaffold — requires Launchpad auth to fetch"
+    }
+  }
+}
